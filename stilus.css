@@ -1,0 +1,16 @@
+main{
+    margin: auto;
+    max-width: 90%;
+}
+#jatekter{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+#jatekter img{
+    
+    width: 150px;
+}
+.Kartya{
+    border: 1px solid black;
+    text-align: center;
+}
