@@ -11,14 +11,18 @@ class Kartya {
             <img src='${this.#fajlnev}' alt='kepek'>
         </div>
     `);
+    this.divElem = $(".Kartya:last-child");
+    this.imgElem = $(".Kartya:last-child img");
+    this.imgElem.on("click", () => {
+      this.#kattintasEsemeny();
+    });
   }
-  setAllapot(){}
-  getFajlnev(){}
-  #setLap(){}
-  #kattintasEsemeny(){
-    const esemeny= new CustomEvent("fordit", {detail:this});
+  setAllapot() {}
+  getFajlnev() {}
+  #setLap() {}
+  #kattintasEsemeny() {
+    const esemeny = new CustomEvent("fordit", { detail: this });
     window.dispatchEvent(esemeny);
-   
-}
+  }
 }
 export default Kartya;

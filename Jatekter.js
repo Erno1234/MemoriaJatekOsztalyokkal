@@ -8,6 +8,7 @@ class JatekTer {
     }
     $(window).on("fordit", (event)=>{
         let aktElem = event.detail;
+        console.log(aktElem)
         
     })
   }
